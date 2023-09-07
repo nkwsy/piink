@@ -27,8 +27,8 @@ def download_file(url, local_filename):
 if __name__ == "__main__":
     # Define your public S3 bucket URLs here
     files_to_download = {
-        "IMG_URL": "/home/pi/piink/media/out.jpg",
-        "XML_URL": "/home/pi/piink/media/dv_signage.xml",
+        IMG_URL: "/home/pi/piink/media/out.jpg",
+        XML_URL: "/home/pi/piink/media/dv_signage.xml",
     }
 
     for url, local_path in files_to_download.items():
