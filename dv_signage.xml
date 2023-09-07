@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<epd_config>
+<epd name="31.2_Signage">
+<image_path>/home/pi/EPM_100_Files/media/panel1/</image_path>
+<image_name>
+   <img>out.bmp</img>
+</image_name>
+   <dwell_time>86400</dwell_time>
+<vcom>2330</vcom> <!-- unit mV -->
+<en_set_temperature>1</en_set_temperature> <!-- Enable:1, Disable:0 -->
+<temperature>25</temperature>
+<waveform_mode>2</waveform_mode>
+   <en_slide_show>0</en_slide_show> <!-- Enable:1, Disable:0 -->
+<enable_cfa>0</enable_cfa>    <!-- Enable(1)/Disable(0) 31.2 cfa -->
+   <enable_mirror>1</enable_mirror><!-- Enable(1)/Disable(0) whole image mirror(x direction) -->
+   <enable_flip>0</enable_flip>    <!-- Enable(1)/Disable(0) whole image flip (y direction) -->
+   <enable_rotate>1</enable_rotate> <!-- Enable(1)/Disable(0) ccw 90 rotation -->
+   <enable_flip_42>0</enable_flip_42> <!-- Enable(1)/Disable(0) 42 left panel flip -->
+</epd>
+</epd_config>
