@@ -4,7 +4,7 @@ import shutil
 import dotenv
 import logging
 
-logging.basicConfig(filename='piink.log', level=logging.INFO)
+logging.basicConfig(filename='/home/pi/piink/piink.log', level=logging.INFO)
 
 dotenv.load_dotenv()
 
