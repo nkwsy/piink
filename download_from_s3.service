@@ -1,6 +1,7 @@
 [Unit]
 Description=Download files from S3 bucket at boot
-After=network.target
+Wants=network-online.target
+After=network-online.target
 
 [Service]
 ExecStart=/usr/bin/python3 /home/pi/piink/download_from_s3.py
