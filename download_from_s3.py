@@ -4,7 +4,7 @@ import shutil
 import dotenv
 import logging
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(filename='piink.log', level=logging.INFO)
 
 dotenv.load_dotenv()
 
@@ -41,10 +41,9 @@ if __name__ == "__main__":
         XML_URL: "/home/pi/piink/media/dv_signage.xml",
     }
 
-    for url, local_path in files_to_download.items():
-        download_file(url, local_path)
-
     try:
+        for url, local_path in files_to_download.items():
+            download_file(url, local_path)
         shutil.move("/home/pi/piink/media/out.jpg", f"{OUT_FOLDER}/out.jpg")
         shutil.move("/home/pi/piink/media/dv_signage.xml", f"{OUT_FOLDER}/dv_signage.xml")
     except Exception as e:
