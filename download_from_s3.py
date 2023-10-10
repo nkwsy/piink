@@ -50,7 +50,7 @@ def download_file(url, local_filename):
         logging.error(f"Error in downloading file: {e}")
 
 if __name__ == "__main__":
-    filename = {datetime.datetime.now().strftime("%Y%m%d%H%M%S")}
+    filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     files_to_download = {
         IMG_URL: "/home/pi/piink/media/out.jpg",
         XML_URL: "/home/pi/piink/media/dv_signage.xml",
