@@ -26,7 +26,7 @@ def replace_img_in_xml(xml_path, img_name):
     try:
         with open(xml_path, 'r') as f:
             xml = f.read()
-            xml = xml.replace("out", img_name)
+            xml = xml.replace("out", str(img_name))
         with open(xml_path, 'w') as f:
             f.write(xml)
         logging.info(f"Replaced image path in {xml_path}")
